@@ -1,4 +1,4 @@
-export default Profile = ({ data, setData, errors }) => {
+ const Profile = ({ data, setData, errors }) => {
   const { name, age, email } = data;
 
   const handleDataChange = (e, item) => {
@@ -39,3 +39,5 @@ export default Profile = ({ data, setData, errors }) => {
     </div>
   );
 };
+
+export default Profile

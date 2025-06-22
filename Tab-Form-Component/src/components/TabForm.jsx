@@ -3,7 +3,7 @@ import Profile from "./Profile";
 import Interests from "./Interests";
 import Settings from "./Settings";
 
-export default TabForm = () => {
+const TabForm = () => {
   const [data, setData] = useState({
     name: "Ritik Raj",
     age: "22",
@@ -92,7 +92,7 @@ export default TabForm = () => {
       <div className="tab-body">
         <ActiveTabComponent data={data} setData={setData} errors={errors} />
       </div>
-      <div>
+      <div className="tab-footer">
         {activeTab > 0 && <button onClick={handlePrevClick}>Prev</button>}
         {activeTab < tabs.length - 1 && (
           <button onClick={handleNextClick}>Next</button>
@@ -104,3 +104,5 @@ export default TabForm = () => {
     </div>
   );
 };
+
+export default TabForm

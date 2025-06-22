@@ -1,4 +1,4 @@
-export default Settings = ({ data, setData }) => {
+const Settings = ({ data, setData }) => {
   const { theme } = data;
 
   const handleDataChange = (e) => {
@@ -29,3 +29,5 @@ export default Settings = ({ data, setData }) => {
     </div>
   );
 };
+
+export default Settings

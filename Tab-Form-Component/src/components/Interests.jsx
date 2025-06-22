@@ -1,4 +1,4 @@
-export default Interests = ({ data, setData, errors }) => {
+const Interests = ({ data, setData, errors }) => {
   const { interests } = data;
 
   const handleDataChange = (e, name) => {
@@ -44,3 +44,5 @@ export default Interests = ({ data, setData, errors }) => {
     </div>
   );
 };
+
+export default Interests
