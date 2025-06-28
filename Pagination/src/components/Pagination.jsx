@@ -10,7 +10,7 @@ const Pagination = ({ currentPage, noOfPages, setCurrentPage }) => {
     <div>
       <div>
         {" "}
-        <button
+        <button title="prev"
           disabled={currentPage === 0}
           onClick={() => {
             gotoPrevPage();
@@ -28,7 +28,7 @@ const Pagination = ({ currentPage, noOfPages, setCurrentPage }) => {
             {n}{" "}
           </span>
         ))}{" "}
-        <button
+        <button title="next"
           disabled={currentPage === noOfPages - 1}
           onClick={() => {
             gotoNextPage();
