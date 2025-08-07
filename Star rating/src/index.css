@@ -1,0 +1,64 @@
+/* Body background */
+body {
+  background: #09090b;
+  margin: 0;
+  min-height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+/* Star Rating Dark Theme Styles */
+.container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 8px;
+  padding: 20px;
+  background: #18181b;
+  border-radius: 12px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.3);
+  border: 1px solid #27272a;
+}
+
+.container span {
+  font-size: 2.5rem;
+  color: #52525b;
+  cursor: pointer;
+  transition: all 0.2s ease;
+  user-select: none;
+}
+
+.container span:hover {
+  transform: scale(1.1);
+}
+
+/* Gold/Active state */
+.container span.gold {
+  color: #fbbf24;
+  text-shadow: 0 0 8px rgba(251, 191, 36, 0.6);
+}
+
+/* Hover effects for non-gold stars */
+.container span:not(.gold):hover {
+  color: #a1a1aa;
+}
+
+/* Responsive design */
+@media (max-width: 768px) {
+  .container {
+    gap: 6px;
+    padding: 15px;
+  }
+  
+  .container span {
+    font-size: 2rem;
+  }
+}
+
+/* Focus styles for accessibility */
+.container span:focus {
+  outline: 2px solid #fbbf24;
+  outline-offset: 4px;
+  border-radius: 4px;
+}
